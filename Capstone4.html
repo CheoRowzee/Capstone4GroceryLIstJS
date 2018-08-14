@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping LIst</title>
+</head>
+	<h1>Shopping List</h1>
+<body>
+	
+	<style>
+    html {
+           font-family: Helvetica, Arial, sans-serif;
+           font-size: 30px;
+           }
+           h1 {
+   			 text-align: center;
+          }
+          body{
+          	text-align: center;
+          }
+
+          h1{
+          	color: blue;
+          }
+          	
+
+    </style>
+	
+	<div class = "form">
+		<label for= "item">Add Item to your list:</label><br>
+	</div>
+	
+	<ul>
+		<li>Milk: $1.99</li>
+		<button onclick="getTotal(' Milk', 1.99);">Add item</button><br>
+		<li>Butter: $3.99</li>
+		<button onclick="getTotal('Butter', 3.99)">Add item</button><br>
+		<li>Juice: $4.99</li>
+	<button onclick ="getTotal('Juice', 4.99)">Add item</button><br>
+		<li>Carrots: $3.50</li>
+	<button onclick ="getTotal('Carrots', 3.50)">Add item</button><br>
+		<li>Steak: $10.99</li>
+	<button onclick ="getTotal('Steak', 10.99)">Add item</button><br>
+	</ul>
+
+	<div>
+	<button onclick ="getTotal() ">Checkout</button><br>
+	<label id="total">Your total is:</label><br>
+	</div>
+
+
+
+<script src = "groceryscript.js"></script> 
+</body>
+</html>
